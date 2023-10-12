@@ -12,7 +12,7 @@ const Home = () => {
     const [popularMovies, setPopularMovies] = useState([])
 
     const settings = {
-        showArrows: true,
+        showArrows: false,
         interval: 3500,
         dynamicHeight: false,
         stopOnHover: false,
@@ -22,6 +22,7 @@ const Home = () => {
         showThumbs: false,
         showIndicators: true,
         swipeable: true,
+        emulateTouch: true,
         autoPlay: true,
       };
 
@@ -48,8 +49,8 @@ const Home = () => {
            {...settings}
             >
             {
-                popularMovies.map(movie => (
-                    <Link style={{textDecoration:"none",color:"white"}} to={`/movie/${movie.id}`} >
+                popularMovies.map((movie,index) => (
+                    <Link key={index} style={{textDecoration:"none",color:"white"}} to={`/movie/${movie.id}`} >
                         <div className="posterImage">
                             <img alt='' src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                         </div>
