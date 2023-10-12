@@ -1,0 +1,38 @@
+.header {
+    padding: 5px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerLeft {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.headerLeft a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 10px 20px;
+}
+
+.header_icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .header_icon {
+        width: 40px;
+    }
+
+    .header {
+        padding: 0;
+    }
+  }
