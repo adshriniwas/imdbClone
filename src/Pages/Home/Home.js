@@ -22,7 +22,6 @@ const Home = () => {
         showThumbs: false,
         showIndicators: true,
         swipeable: true,
-        emulateTouch: true,
         autoPlay: true,
       };
 
