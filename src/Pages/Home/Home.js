@@ -12,8 +12,8 @@ const Home = () => {
     const [popularMovies, setPopularMovies] = useState([])
 
     const settings = {
-        showArrows: false,
-        interval: 3500,
+        showArrows: true,
+        interval: 3000,
         dynamicHeight: false,
         stopOnHover: false,
         infiniteLoop: true,
